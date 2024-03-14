@@ -8,8 +8,18 @@
 @import url('./footer.css');
 @import url('./reset.css');
 
+@font-face {
+  font-family: InterTightMedium;
+  src: url(../fonts/InterTight-Medium.ttf);
+}
+
+@font-face {
+  font-family: InterTightBold;
+  src: url(../fonts/InterTight-SemiBold.ttf);
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: InterTightMedium, InterTightBold;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
