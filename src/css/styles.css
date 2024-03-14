@@ -1,3 +1,5 @@
+@import url('./common.css');
+@import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about.css');
@@ -5,8 +7,10 @@
 @import url('./projects.css');
 @import url('./faq.css');
 @import url('./cover.css');
+@import url('./review.css');
 @import url('./footer.css');
-@import url('./reset.css');
+@import url('./footer-modal.css');
+@import url('./maxins.css');
 
 @font-face {
   font-family: InterTightMedium;
@@ -16,20 +20,4 @@
 @font-face {
   font-family: InterTightBold;
   src: url(../fonts/InterTight-SemiBold.ttf);
-}
-
-:root {
-  font-family: InterTightMedium, InterTightBold;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
