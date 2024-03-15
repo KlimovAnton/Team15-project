@@ -32,7 +32,7 @@ body {
     stroke: #3b3b3b;
 }
 
-/* @media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
     .container {
       margin-left: auto;
       margin-right: auto;
@@ -52,7 +52,7 @@ body {
   
   @media screen and (min-width: 375px) and (max-width: 767px) {
     .container {
-      max-width: 100%;
+      max-width: 375px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -64,7 +64,7 @@ body {
     .container {
       padding-left: 32px;
       padding-right: 32px;
-      max-width: 100%;
+      max-width: 768px;
     }
   }
   
@@ -77,26 +77,6 @@ body {
     .container {
       padding-left: 32px;
       padding-right: 32px;
-      max-width: 100%;
-    }
-  } */
-
-  .container {
-    min-width: 320px;
-    max-width: 375px;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-      padding: 0 32px;
-    }
-  }
-  
-  @media screen and (min-width: 1440px) {
-    .container {
       max-width: 1440px;
     }
   }
