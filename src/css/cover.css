@@ -1,0 +1,48 @@
+
+  .section-cover {
+    display: flex;
+    position: relative;
+  }
+  .cover-container {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: -800px;
+    left: 0;
+    overflow: hidden;
+    
+  }
+  
+.cover-line {
+     height: 314px;
+     display: flex;
+     gap: 20px;
+     transform: rotate(16deg);
+  }
+  
+ .cover-picture {
+    background-color: #FFDC00;
+    flex-shrink: 0;
+    margin-right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 9); 
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+  }
+  
+ @keyframes marqueeLine {
+    from {
+      transform: translateX(-20%);
+    }
+    
+    to {
+      transform: translateX(-180%);
+    }
+  }
+  
