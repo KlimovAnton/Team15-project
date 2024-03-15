@@ -6,10 +6,17 @@
 
 
 .about-me-p {
+
   font-family: "Inter Tight";
   font-size: 24px;
     font-weight: 500;
     line-height: 28px;
+
+  font-family: InterTightMedium;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -3%;
   text-align: left;
   text-transform: uppercase;
   margin:  32px  32px 272px 32px ;
@@ -62,6 +69,7 @@
   align-items: start;
 }
 .header-button-container > p{
+  font-family: "InterTightMedium";
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
