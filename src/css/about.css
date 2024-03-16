@@ -1,22 +1,22 @@
 
+
+
 .about-me-head{
   background-color: var(--cards);
   border-radius: 24px;
+  height: 500px;
 }
 
 
 .about-me-p {
-
-  font-family: "Inter Tight";
+  height: 279px;
   font-size: 24px;
     font-weight: 500;
     line-height: 28px;
-
-  font-family: InterTightMedium;
+  font-family: "InterTightMedium";
   font-size: 38px;
   font-weight: 500;
   line-height: 40px;
-  letter-spacing: -3%;
   text-align: left;
   text-transform: uppercase;
   margin:  32px  32px 272px 32px ;
@@ -52,6 +52,33 @@
 .about-me-head-img > img{
   border-radius: 24px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about-container {
+    max-width: 704px;
+    margin:  0 auto;
+  }
+    .about-me-head {
+      border-radius: 24px;
+      width: 704px;
+          margin: 0 auto;
+    }
+    .about-me-p {
+      height: 279px;
+      font-family: "Inter Tight";
+      font-size: 38px;
+        font-weight: 500;
+        line-height: 40px;
+      font-family: "InterTightMedium";
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 40px;
+      text-align: left;
+      text-transform: uppercase;
+      margin: 32px 32px 272px 32px;
+    }
+}
+
 .header{
   color: var(--minor-text);
   
