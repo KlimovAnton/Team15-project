@@ -15,11 +15,8 @@ a {
 }
 
 .hero {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 32px;
   padding-bottom: 32px;
-
   background-image: url(./img/mobile/hero_bg_mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,8 +105,6 @@ a {
   color: #fafafa;
 }
 
-
-
 /* TABLET */
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -120,7 +115,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .hero {
     background-image: url(./img/tablet/hero_bg_tablet.png);
   }
@@ -133,7 +128,7 @@ a {
     text-transform: uppercase;
     margin-bottom: 187px;
     margin-top: 188px;
-    }
+  }
 
   .hero-list {
     gap: 8px;
@@ -169,20 +164,25 @@ a {
     display: flex;
     justify-content: end;
   }
+  .hero-email:hover,
+  .hero-email:focus,
+  .hero-email:active {
+    border-color: #fafafa;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
+/* DESKTOP 1440 */
 
-/* DESKTOP 1280*/
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .hero {
     background-image: url(./img/desktop/header_bg_desktop@2x.png);
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .hero {
     background-image: url(./img/desktop/header_bg_desktop.png);
   }
@@ -200,32 +200,5 @@ a {
   .hero-wrapper {
     display: flex;
     justify-content: end;
-  }
-}
-
-
-/* DESKTOP 1440 */
-
-@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppx) and (min-width: 1440px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .hero {
-    background-image: url(./img/desktop/header_bg_desktop@2x.png);
-  }
-}
-
-@media screen and (min-width: 1440px){
-  .hero {
-    background-image: url(./img/desktop/header_bg_desktop.png);
-  }
-  .hero-title br:nth-of-type(2),
-  .hero-title br:nth-of-type(4) {
-    display: none;
-  }
-
-  .hero-title {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 243px;
   }
 }
