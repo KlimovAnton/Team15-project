@@ -14,9 +14,9 @@
     font-weight: 500;
     line-height: 28px;
   font-family: "InterTightMedium";
-  font-size: 38px;
+  /* font-size: 38px; */
   font-weight: 500;
-  line-height: 40px;
+  /* line-height: 40px; */
   text-align: left;
   text-transform: uppercase;
   margin:  32px  32px 272px 32px ;
@@ -53,7 +53,7 @@
   border-radius: 24px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about-container {
     max-width: 704px;
     margin:  0 auto;
@@ -69,16 +69,38 @@
       font-size: 38px;
         font-weight: 500;
         line-height: 40px;
-      font-family: "InterTightMedium";
-      font-size: 38px;
-      font-weight: 500;
-      line-height: 40px;
+      
       text-align: left;
       text-transform: uppercase;
       margin: 32px 32px 272px 32px;
     }
+    .about-me-head-img{
+      width: 704px;
+        height: 700px;
+    }
 }
-
+@media screen and (min-width: 1280px){
+  .about-container {
+      max-width: 1265px;
+      margin: 0 auto;
+    }
+    .about-me-head-list{
+      flex-direction: row;
+    }
+    .about-me-head {
+      width: 680px;
+      height: 700px;
+    }
+    .about-me-head-img {
+      width: 680px;
+      height: 700px;
+    }
+    .about-me-head-list {
+      width: 1376px;
+    height: 680px;
+    }
+    
+}
 .header{
   color: var(--minor-text);
   
@@ -129,6 +151,39 @@
 .education{
   margin-bottom: 4rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .about-me-list{
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1280px){
+  .about-me-list {
+      width: 1376px;
+    }
+  
+    .about-me {
+      width: 1376px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+  
+    .text {
+      width: 612px;
+      margin-left: auto;
+    }
+  
+    .role {
+      width: 1376px;
+    }
+  
+    .education {
+      width: 1376px;
+    }
+  
+    .header-button-container {
+      width: 100%;
+    }
+}
 .tech-stack{
   margin: 0 auto;
   display: flex;
@@ -138,8 +193,7 @@
   overflow: hidden;
   width: 260px;
 }
-
-.tech-button{
+.tech-button {
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -152,7 +206,21 @@
   transition: background-color 0.3s ease;
 
 }
+@media screen and (min-width: 768px){
+  .tech-stack {
+      width: 600px;
+    }
+  .tech-button {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;}
+}
 
+@media screen and (min-width: 1280px){
+  .tech-stack {
+    width: 1200px;
+  }
+}
 .tech-button:hover{
   background-color: var(--button-color);
 }

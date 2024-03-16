@@ -11,7 +11,19 @@
         </p>
       </li>
       <li class="about-me-head-img">
-        <img src="../img/mobile/hero_image.jpg" alt="My photox" />
+        <img
+          srcset="
+            ../img/mobile/hero_image.jpg      343w,
+            ../img/desktop/hero_image.jpg     680w,
+            ../img/mobile/hero_image@2x.jpg   686w,
+            ../img/tablet/hero_image.jpg      704w,
+            ../img/desktop/hero_image@2x.jpg 1360w,
+            ../img/tablet/hero_image@2x.jpg  1408w
+          "
+          sizes="(min-width: 1280px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px"
+          src="../img/mobile/hero_image.jpg"
+          alt="My photo"
+        />
       </li>
     </ul>
     <ul class="about-me-list">
@@ -24,7 +36,6 @@
             </svg>
           </button>
         </div>
-
         <p class="text">
           I am Lloyd Jefferson, a talented programmer with extensive expertise
           in software development. I have an understanding of different
@@ -53,7 +64,7 @@
           </button>
         </div>
 
-        <ul class="role-list">
+        <ul class="role-list text">
           <li class="role">Frontend development</li>
           <li class="role">HeadlessCMS,Wordpress</li>
           <li class="role">Blender(enjoy)</li>
@@ -69,15 +80,15 @@
           </button>
         </div>
 
-        <ul class="education">
-          <li class="education-item">
+        <ul class="education text">
+          <li class="education-item text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
           </li>
-          <li class="education-item">
+          <li class="education-item text">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
           </li>
-          <li class="education-item">
+          <li class="education-item text">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
           </li>
         </ul>
