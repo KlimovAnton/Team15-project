@@ -29,7 +29,6 @@ a {
   font-weight: 500;
   font-size: 50px;
   line-height: 100%;
-  /* line-height: 50px; */
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
@@ -93,6 +92,7 @@ a {
   align-items: center;
   margin-left: 4px;
 }
+
 .hero-wrapper {
   display: flex;
   flex-direction: row;
@@ -115,7 +115,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: url(../img/tablet/hero_bg_tablet.png);
   }
