@@ -33,7 +33,7 @@ body {
 }
 
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
     .container {
       margin-left: auto;
       margin-right: auto;
@@ -56,7 +56,7 @@ body {
       max-width: 375px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     .section {
       padding-top: 48px;
       padding-bottom: 48px;
@@ -69,7 +69,7 @@ body {
     }
   }
   
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1280px) {
     .section {
       padding-top: 82px;
       padding-bottom: 82px;
@@ -78,6 +78,39 @@ body {
     .container {
       padding-left: 32px;
       padding-right: 32px;
-      max-width: 1440px;
+      max-width: 1280px;
+    }
+  } */
+
+  .container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding-bottom: 32px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding: 0 32px;
+    }
+    
+    .section {
+      padding-bottom: 48px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+    }
+
+    .section {
+      padding-bottom: 82px;
     }
   }
