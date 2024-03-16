@@ -21,12 +21,7 @@
   background: -webkit-linear-gradient(top, #FAFAFA 50%, #242527 50%);
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1439px){.projects-slide{
-   width: 704px;
-  height: 1191px;}}
-@media screen and (min-width: 1440px){.projects-slide{
-   width: 1376px;
-  height: 625px;}} */
+
 
 .project-text{
    font-family: "Inter Tight";
@@ -40,8 +35,14 @@
     margin-left: 32px;
     margin-bottom: 32px;
 }
-/* @media screen and (min-width: 768px) and (max-width: 1439px){.project-text{font-size: 44px}}
-@media screen and (min-width: 1440px){.project-text{font-size: 44px}} */
+ /* @media screen and (min-width: 768px) and (max-width: 1439px){
+   .project-text{font-size: 44px; width: 494px;}
+   .projects-slide{width: auto;}
+}
+@media screen and (min-width: 1440px){
+   .project-text{font-size: 44px; width: 494px;}
+   .projects-slide{width: auto;}
+} */
 
 .projects-content{
    display: flex;
