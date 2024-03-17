@@ -1,4 +1,3 @@
-
 .projects-title{
    color: var(--minor-text);
    font-weight: 600;
@@ -24,25 +23,30 @@
 
 
 .project-text{
-   font-family: "Inter Tight";
+   
   font-size: 24px;
     font-weight: 500;
-    line-height: 28px;
-    letter-spacing: -3%;
+    
+    
     color: #1C1D20;
     text-align: left;
     width: 279px;
     margin-left: 32px;
     margin-bottom: 32px;
 }
- /* @media screen and (min-width: 768px) and (max-width: 1439px){
+@media screen and (min-width: 768px) {
    .project-text{font-size: 44px; width: 494px;}
-   .projects-slide{width: auto;}
+   .projects-slide{width: 704px;
+   height: 1191px;}
 }
 @media screen and (min-width: 1440px){
-   .project-text{font-size: 44px; width: 494px;}
-   .projects-slide{width: auto;}
-} */
+   .project-text{font-size: 44px; width: 600px;}
+   .projects-slide{width: 1376px;
+      height: 625px;
+      background: -webkit-linear-gradient(right, #242527 50%, #FAFAFA 50%);
+      
+   }
+}
 
 .projects-content{
    display: flex;
@@ -58,14 +62,16 @@
    margin-bottom: 96px;
    gap: 10px;
 }
-/* @media screen and (min-width: 768px) and (max-width: 1439px){.projects-content{width: 350px}}
-@media screen and (min-width: 1440px){.projects-content{width: 312px}} */
+@media screen and (min-width: 768px) {.projects-content{width: 350px}}
+@media screen and (min-width: 1440px) {.projects-content{width: 350px;
+   margin-bottom: 223px;}}
+
 
 .project-contentBtn{
     font-size: 16px;
     font-weight: 500;
     line-height: 19.36px;
-    letter-spacing: 0.64px;
+    border: none;
     color: #1C1D20;
     border-radius: 60px;
     background: #ffffff;
@@ -75,8 +81,8 @@
     padding: 13px 18px;
    }
 
-   /* @media screen and (min-width: 768px) and (max-width: 1439px){}
-@media screen and (min-width: 1440px){} */
+  
+
 
  .project-seeBtn{
     font-size: 16px;
@@ -92,15 +98,23 @@
     border-radius: 60px; 
     color: #FAFAFA;
     background: #ED3B44;
+    border: none;
     }
 
-     /* img{
+     .project-img{
       position: relative;
-      top: 40%;
-      left: 50%;
+      top: 20%;
+      left: 5%;
       transform: translate(-50%, -50%);
-    } */
-    
+    }
+    @media screen and (min-width: 1440px) { .project-img{
+      width: 614px;
+      height: 385px;
+      position: relative;
+      top: -50%;
+      left: 53%;
+      transform: translate(-50%, -50%);}}
+
     .slide-btn{
       display: flex;
       align-items: center;
@@ -112,7 +126,7 @@
     .Slide-Prev{
       
       background-color: var(--background);
-      
+      transform: scaleX(-1);
       border-radius: 60px;
       border-color: #FAFAFA80;
       height: 36px;
