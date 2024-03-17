@@ -87,7 +87,7 @@
 }
 @media screen and (min-width: 1280px){
   .about-container {
-      max-width: 1265px;
+      width: 1265px;
       margin: 0 auto;
     }
     .about-me-head-list{
@@ -106,7 +106,7 @@
       height: 700px;
     }
     .about-me-head-list {
-      width: 1376px;
+    width: 1265px;
     height: 680px;
     }
     
@@ -135,7 +135,6 @@
   line-height: 40px;
   text-align: left;
   text-transform: uppercase;
-
 }
 
 .hide-text-btn{
@@ -242,7 +241,7 @@
     width: 1200px;
   }
   .tech-arrow-container {
-
+    width: 1312px;
     gap: 65px;
   }
 }
