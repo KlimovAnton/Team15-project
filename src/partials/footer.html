@@ -19,6 +19,7 @@
           name="user-email"
           class="footer-form-input"
           placeholder="clients@gmail.com"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           required
         />
         <textarea
@@ -43,3 +44,16 @@
     </ul>
   </div>
 </footer>
+
+<!-- Modal window -->
+
+<div class="backdrop" data-modal>
+  <div class="footer-modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-icon" width="22" height="22">
+        <use href="../img/svg/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2>Thank you for your interest in cooperation!</h2>
+    <p>The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+  </div></div>
