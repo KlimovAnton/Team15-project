@@ -54,10 +54,10 @@
     margin: 0 auto;
   }
   .about-me-head-img-li{
-    width: calc((100% - 30px) / 2);
+    width: 100%;
   }
   .about-me-head-img{
-    
+    width: 100%;
   }
   .about-me-p {
     font-family: InterTightMedium sanf-serif;
