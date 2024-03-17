@@ -1,8 +1,9 @@
-<<<<<<< Updated upstream
+
+
 @media screen and (min-width: 320px) {
   .container {
       margin-left:auto;
-      margin-right: auto
+      margin-right:auto;
   }
 }
 
@@ -328,7 +329,7 @@ screen and (min-device-pixel-ratio: 2) {
       max-width: 768px;
   }
 } */
-=======
+
 
 
 
@@ -513,4 +514,4 @@ screen and (min-device-pixel-ratio: 2) {
 
 
  
->>>>>>> Stashed changes
+
