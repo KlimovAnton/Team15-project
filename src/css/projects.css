@@ -94,12 +94,12 @@
     background: #ED3B44;
     }
 
-     img{
+     /* img{
       position: relative;
       top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
-    }
+    } */
     
     .slide-btn{
       display: flex;
