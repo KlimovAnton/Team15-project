@@ -1,28 +1,37 @@
 <!-- by Miroslav -->
 <section class="about-section">
-  <div class="about-container container">
+  <div class="container">
     <ul class="about-me-head-list">
       <li class="about-me-head">
         <p class="about-me-p">
           I work with people all over the world to create impressive and
           <span class="functional-word">functional </span
           ><span class="websites-word">websites</span> that reflect each
-          client's unique personality .
+          client's unique personality <br />.
         </p>
       </li>
-      <li class="about-me-head-img">
-        <picture>
+      <li class="about-me-head-img-li">
+        <picture class="about-me-head-img">
           <source
-            srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
+            srcset="
+              ../img/desktop/hero_image.jpg    1x,
+              ../img/desktop/hero_image@2x.jpg 2x
+            "
             media="(min-width:1200px)"
           />
           <source
-            srcset="./images/team1tabl.jpg 1x, ./images/team1tabl.jpg 2x"
+            srcset="
+              ../img/tablet/hero_image.jpg    1x,
+              ../img/tablet/hero_image@2x.jpg 2x
+            "
             media="(min-width:768px)"
           />
           <source
-            srcset="./images/team1-mob.jpg 1x, ./images/team1-mob-2x.jpg 2x"
-            media="(min-width:480px)"
+            srcset="
+              ../img/mobile/hero_image.jpg    1x,
+              ../img/mobile/hero_image@2x.jpg 2x
+            "
+            media="(min-width:375px)"
           />
           <img
             src="./images/team1.jpg"
