@@ -35,7 +35,7 @@
     margin-left: 32px;
     margin-bottom: 32px;
 }
- @media screen and (min-width: 768px) and (max-width: 1439px){
+@media screen and (min-width: 768px) {
    .project-text{font-size: 44px; width: 494px;}
    .projects-slide{width: 704px;
    height: 1191px;}
@@ -63,8 +63,8 @@
    margin-bottom: 96px;
    gap: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 1439px){.projects-content{width: 350px}}
-@media screen and (min-width: 1440px){.projects-content{width: 350px;
+@media screen and (min-width: 768px) {.projects-content{width: 350px}}
+@media screen and (min-width: 1440px) {.projects-content{width: 350px;
    margin-bottom: 223px;}}
 
 
@@ -83,7 +83,7 @@
    }
 
   
-@media screen and (min-width: 1440px){}
+
 
  .project-seeBtn{
     font-size: 16px;
@@ -102,16 +102,18 @@
     border: none;
     }
 
-     img{
+     .project-img{
       position: relative;
-      top: 40%;
-      left: 50%;
+      top: 20%;
+      left: 5%;
       transform: translate(-50%, -50%);
     }
-    @media screen and (min-width: 1440px) { img{
+    @media screen and (min-width: 1440px) { .project-img{
+      width: 614px;
+      height: 385px;
       position: relative;
-      top: -30%;
-      left: 75%;
+      top: -50%;
+      left: 53%;
       transform: translate(-50%, -50%);}}
 
     .slide-btn{
