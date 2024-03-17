@@ -19,6 +19,7 @@
     "axios": "^1.6.8",
     "izitoast": "^1.4.0",
     "modern-normalize": "^2.0.0",
+    "simplelightbox": "^2.14.2",
     "swiper": "^11.0.7",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
