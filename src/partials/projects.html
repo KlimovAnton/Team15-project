@@ -3,8 +3,8 @@
 <section class="section">
     
   <div class="project-conteiner container">
-      <h3 class="projects-title">PROJECTS</h3>
-      <ul class="projects-slide">
+      <h2 class="projects-title">PROJECTS</h2>
+      <div class="projects-slide">
       <div class="projects-slide1">
           <ul class="projects-content">
               <li><button class="project-contentBtn">#react</button></li>
@@ -14,7 +14,7 @@
           </ul>
           <h4 class="project-text">Programming Across<br> Borders: Ideas,<br> Technologies, Innovations</h4>
           <button class="project-seeBtn"><a href="#">See project</a></button>
-      <picture class="project-img">
+      <div class="project-img"><picture class="project-img">
         <source srcset="
             ./img/desktop/project1.jpg 1x,
             ./img/desktop/project1@2x.jpg  2x 
@@ -26,9 +26,10 @@
         <source srcset="
             ./img/mobile/project1.jpg 1x, 
             ./img/mobile/project1@2x.jpg 2x
-            " media="(max-width: 767px)">
+            " media="(min-width: 320px)">
         <img src="./img/mobile/project1.jpg" alt="Project1" />
       </picture>
+    </div>
       </div>
   
       <!-- <ul class="projects-slide2">
@@ -77,7 +78,7 @@
         alt="Project1"
       />
       </ul> -->
-    </ul>
+    </div>
   <ul class="slide-btn">
       <li>
           <button disabled class="Slide-Prev"><svg width="20" height="20" class="arrow-tech">
