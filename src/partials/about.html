@@ -11,19 +11,26 @@
         </p>
       </li>
       <li class="about-me-head-img">
-        <img
-          srcset="
-            ../img/mobile/hero_image.jpg      343w,
-            ../img/desktop/hero_image.jpg     680w,
-            ../img/mobile/hero_image@2x.jpg   686w,
-            ../img/tablet/hero_image.jpg      704w,
-            ../img/desktop/hero_image@2x.jpg 1360w,
-            ../img/tablet/hero_image@2x.jpg  1408w
-          "
-          sizes="(min-width: 1280px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px"
-          src="../img/mobile/hero_image.jpg"
-          alt="My photo"
-        />
+        <picture>
+          <source
+            srcset="./images/team1.jpg 1x, ./images/team1-2x.jpg 2x"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="./images/team1tabl.jpg 1x, ./images/team1tabl.jpg 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./images/team1-mob.jpg 1x, ./images/team1-mob-2x.jpg 2x"
+            media="(min-width:480px)"
+          />
+          <img
+            src="./images/team1.jpg"
+            alt="person1"
+            width="450"
+            height="460"
+          />
+        </picture>
       </li>
     </ul>
     <ul class="about-me-list">
