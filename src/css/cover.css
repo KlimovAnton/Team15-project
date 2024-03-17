@@ -1,8 +1,8 @@
 /* MOBILE */
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+@media screen and (min-resolution: 192dpi) and (max-width: 768px),
+  screen and (min-resolution: 2dppx) and (max-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 768px) {
   .section-cover {
     background-image: url(../img/mobile/cover_bg@2x.png);
   }
@@ -27,11 +27,8 @@
 
   .cover-line {
     display: flex;
-
     gap: 25px;
-    height: 162px;
     margin-bottom: 25px;
-
     transform: rotate(16deg);
   }
 
@@ -40,13 +37,18 @@
     width: 282px;
     height: 162px;
     justify-content: center;
-    animation-name: marqueeLine;
+    animation-name: slide;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
 
-  @keyframes marqueeLine {
+  .cover-img {
+    width: 282px;
+    height: 162px;
+  }
+
+  @keyframes slide {
     from {
       transform: translateX(-20%);
     }
@@ -56,7 +58,7 @@
   }
 }
 /* TABLET */
-/*
+
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
@@ -68,43 +70,40 @@
 @media screen and (min-width: 768px) {
   .section-cover {
     background-image: url(../img/tablet/cover_bg.png);
-      width: 960px;
-}
+    height: 960px;
+  }
 
-.cover-container{
-  display: flex;
+  .cover-container {
+    display: flex;
     padding: 0;
     right: -800px;
     left: 0;
-    
-  width: 960px;
-}
-.cover-line {
-  display: flex; 
- gap: 25px;
- width: 100%;
 
- height: 314px;
- margin-bottom: 25px;
+    height: 960px;
+  }
+  .cover-line {
+    display: flex;
+    gap: 75px;
+    height: 314px;
+    margin-bottom: 50px;
+    transform: rotate(16deg);
+  }
 
-   transform: rotate(16deg);
-     }
+  .cover-picture {
+    display: flex;
+    width: 544px;
+    height: 314px;
+    justify-content: center;
+  }
 
-.cover-picture {
-  display: flex;
- 
-  width: 544px;
-
-
-  height: 314px;
-  justify-content: center;
-  
+  .cover-img {
+    width: 544px;
+    height: 314px;
   }
 }
-*/
 
 /* DESKTOP */
-/*
+
 @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
@@ -116,5 +115,5 @@
 @media screen and (min-width: 1280px) {
   .section-cover {
     background-image: url(../img/desktop/cover_bg.jpg);
-  }}
-  */
+  }
+}
