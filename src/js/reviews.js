@@ -1,7 +1,8 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+// import Swiper from 'swiper';
+// import 'swiper/css';
 
-export function initializeSwiper() {
+// export 
+function initializeSwiper() {
   document.addEventListener('DOMContentLoaded', async () => {
     try {
       const response = await fetch('https://portfolio-js.b.goit.study/api/reviews');
@@ -51,3 +52,5 @@ export function initializeSwiper() {
     }
   });
 }
+
+initializeSwiper();
