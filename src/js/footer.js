@@ -5,6 +5,8 @@ const elements = {
   input: document.querySelector('.js-input'),
 };
 
+
+
 elements.input.setAttribute('aria-invalid', false);
 elements.input.setAttribute('aria-valid', false);
 const errorBox = document.createElement('div');
@@ -21,9 +23,16 @@ function initValidation(form) {
       event.preventDefault();
     }
   });
- 
+
   elements.input.insertAdjacentElement('afterend', errorBox);
   elements.input.insertAdjacentElement('afterend', succesBox);
+
+  elements.input.addEventListener("invalid", () => {
+    elements.input.setAttribute("aria-invalid", true);
+
+    const message = getMessage(elements.input);
+    errorBox.textContent = message || elements.input.validationMessage;
+  })
 
   elements.input.addEventListener('blur', () => {
     elements.input.checkValidity();
@@ -31,20 +40,25 @@ function initValidation(form) {
 
   elements.input.addEventListener('input', () => {
     const valid = elements.input.checkValidity();
+
     if (valid) {
       elements.input.setAttribute('aria-invalid', false);
       elements.input.setAttribute('aria-valid', true);
       succesBox.textContent = 'Succes!';
       errorBox.textContent = '';
       return;
-    } 
-    else {
+    } else {
       elements.input.setAttribute('aria-valid', false);
-      succesBox.textContent = ''
+      succesBox.textContent = '';
       elements.input.setAttribute('aria-invalid', true);
-      errorBox.textContent = 'Invalid email, try again!';
     }
   });
+}
+
+function getMessage(field) {
+  const validity = field.validity;
+  if (validity.valueMissing) return `Please enter your email`;
+  if (validity.typeMismatch) return `Invalid email, try again!`;
 }
 
 initValidation(elements.form);
@@ -53,18 +67,26 @@ elements.form.addEventListener('submit', handlerSubmit);
 
 function handlerSubmit(evt) {
   evt.preventDefault();
-  
+
+  console.dir(elements.input);
+
   succesBox.classList.remove('succes');
+
   elements.input.setAttribute('aria-valid', false);
   succesBox.textContent = '';
 
+  const { email, comment, button } = evt.currentTarget.elements;
 
-  const { email, comment } = evt.currentTarget.elements;
+  if(email.value === '') {
+    button.disabled = true;
+    return
+  }
 
   const post = {
     email: email.value,
     comment: comment.value,
   };
+
 
   const options = {
     method: 'POST',
@@ -77,7 +99,7 @@ function handlerSubmit(evt) {
     .then(
       resp => elements.modal.classList.remove('is-hidden'),
 
-      evt.currentTarget.reset()
+      // evt.currentTarget.reset()
     )
     .catch();
 }
@@ -87,5 +109,3 @@ elements.closeBtn.addEventListener('click', handlerClick);
 function handlerClick() {
   elements.modal.classList.add('is-hidden');
 }
-
-
