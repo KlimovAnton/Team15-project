@@ -25,6 +25,9 @@
 
 .icon-benefits {
   margin-bottom: 64px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgb(237, 59, 68);
 }
 
 .benefits-title {
@@ -57,6 +60,11 @@
   color: white;
 }
 
+.benefits-btn:hover {
+  border-color: #ffffff;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Tablet adaptive */
 @media screen and (min-width: 768px) {
   .benefits-list {
@@ -71,5 +79,8 @@
   .benefits-container {
     display: flex;
     justify-content: space-between;
+  }
+  .benefits-item {
+    max-width: 332px;
   }
 }
