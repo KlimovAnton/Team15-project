@@ -110,7 +110,7 @@
   }
 }
 
-.header {
+.about-accordion-header {
   color: var(--minor-text);
   font-weight: 600;
   line-height: 24px;
@@ -120,13 +120,13 @@
   margin: 0 auto;
 }
 
-.header-button-container {
+.about-arrow-button-container {
   display: flex;
   justify-content: space-between;
   height: 36px;
 }
 
-.header-button-container>p {
+.about-arrow-button-container>p {
   font-family: InterTightMedium sanf-serif;
   display: inline-block;
   font-size: 16px;
@@ -147,7 +147,9 @@
   justify-content: center;
   background-color: transparent;
 }
-
+.about-svg-arrow{
+  display: block;
+}
 
 .text {
   color: rgb(250, 250, 250);
@@ -183,7 +185,7 @@
     margin-left: auto;
   }
 
-  .header-button-container {
+  .about-arrow-button-container {
     width: 100%;
   }
 }
