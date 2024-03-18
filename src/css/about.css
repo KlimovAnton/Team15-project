@@ -12,14 +12,14 @@
 
 .about-me-p {
   font-size: 24px;
-    font-weight: 500;
-    line-height: 28px;
+  font-weight: 500;
+  line-height: 28px;
   font-family: InterTightMedium sanf-serif;
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
   margin:  32px  32px 32px 32px ;
-      padding-bottom: 272px;
+  padding-bottom: 300px;
 }
 
 .websites-word {
@@ -67,35 +67,34 @@
     text-align: left;
     text-transform: uppercase;
     margin: 32px 32px 32px 32px;
-    padding-bottom: 396px;
+    padding-bottom: 364px;
   }
 }
 @media screen and (min-width: 1280px){
   .about-section {
-    
-      margin-bottom: 164px;
-    }
+    margin-bottom: 164px;
+  }
   .about-container {
-      margin: 0 auto;
-    }
-    .about-me-head-list{
-      flex-direction: row;
-      width: 100%;
-    }
-    .about-me-head-img {
-      width: 100%;
-    }
-    .about-me-head {
-      height: 700px;
-    }
-    .about-me-p{
-      font-size: 38px;
-      line-height: 40px;
-    }
-    
-    .about-me-head-list {
-    
-    }
+    margin: 0 auto;
+  }
+  .about-me-head-list{
+    flex-direction: row;
+    width: 100%;
+  }
+  .about-me-head-img-li {
+    width: 100%;
+  }
+  .about-me-head-img {
+    width: 100%;
+  }
+  .about-me-head {
+  }
+  .about-me-p{
+    font-size: 38px;
+    line-height: 40px;
+    padding-bottom: 364px;
+  }
+
     
 }
 .header{
