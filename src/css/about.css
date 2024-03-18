@@ -109,16 +109,15 @@
   display: flex;
   justify-content: space-between;
   height: 36px;
-  align-items: start;
 }
 .header-button-container > p{
   font-family: InterTightMedium sanf-serif;
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
-  line-height: 40px;
   text-align: left;
   text-transform: uppercase;
+  align-items: flex-start;
 }
 
 .hide-text-btn{
@@ -130,8 +129,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--background);
+  background-color: transparent;
 }
+
+
 .text{
   color: rgb(250, 250, 250);
   font-size: 16px;
