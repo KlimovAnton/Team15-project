@@ -78,6 +78,19 @@
     background-color: var(--button-color);
     cursor: pointer;
   }
+<<<<<<< Updated upstream
+=======
+
+
+  .header-mob-menu-order-link {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+
+>>>>>>> Stashed changes
   
   .header-mob-menu-order-link:hover,
   .header-mob-menu-order-link:focus {
