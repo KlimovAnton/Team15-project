@@ -31,16 +31,19 @@
     margin-bottom: 25px;
     transform: rotate(16deg);
   }
+  .cover-line .show{
+  animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
 
   .cover-picture {
     display: flex;
     width: 282px;
     height: 162px;
     justify-content: center;
-    animation-name: slide;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    
   }
 
   .cover-img {
