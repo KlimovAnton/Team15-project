@@ -15,17 +15,18 @@
       </h2>
     </div>
     
-    <form class="footer-form js-footer-form">
+    <form class="footer-form js-footer-form" novalidate>
       <div class="footer-form-fields">
         <div>
           <input
           type="email"
           name="email"
-          class="footer-form-input js-input"
+          class="footer-form-input js-input ellipsis"
           placeholder="clients@gmail.com"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           required
         />
+        <div class="message-box"></div>
         </div>
         <div>
           <textarea
@@ -35,7 +36,7 @@
         ></textarea>
         </div>
       </div>
-      <button class="footer-form-btn" name="button">Send</button>
+      <button class="footer-form-btn" type="submit" name="button">Send</button>
     </form>
     <ul class="footer-contacts">
       <li class="footer-contacts">
