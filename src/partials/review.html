@@ -1,36 +1,44 @@
 <!-- by Lesya -->
 
-<section class="reviews-section">
+<section class="reviews-section reviews">
   <div class="container">
     <h2 class="reviews-title">reviews</h2>
 
     <div class="swiper-container">
-      <div class="swiper-wrapper">
-
-      </div>
-    </div>
+      <ul class="swiper-wrapper" id="wrap"></ul>
+    </div> 
     
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  <div class="swiper-btn-wrap">
+    <button
+      class="swiper-btn-prev swiper-button-disabled"
+      type="button"
+      tabindex="0"
+      aria-label="Previous slide"
+      aria-controls="swiper-wrapper-2b747105489917d3b"
+      aria-disabled="false"
+    >
+      <svg class="icon-arrow" width="32" height="32">
+        <use
+          href="./img/svg/sprite.svg#icon-arrow-narrow-right"
+        ></use>
+      </svg>
+    </button>
+
+    <button
+      class="swiper-btn-next swiper-button-disabled"
+      type="button"
+      tabindex="-1"
+      aria-label="Next slide"
+      aria-controls="swiper-wrapper-2b747105489917d3b"
+      aria-disabled="true"
+      disabled=""
+    >
+      <svg class="icon-arrow" width="32" height="32">
+        <use 
+        href="./img/svg/sprite.svg#icon-arrow-narrow-right"
+        ></use>
+      </svg>
+    </button>
+    <script type="module" src="../js/reviews.js"></script>
   </div>
-
-
-  <ul class="swiper-btn">
-    <li class="swiper-btn-item">
-      <button class="prev">
-        <svg width="32" height="32" class="icon-arrow">
-          <use href="./img/svg/sprite.svg#icon-arrow-narrow-right"></use>
-        </svg>
-      </button>
-    </li>
-    <li class="swiper-btn-item">
-      <button class="next">
-        <svg width="32" height="32" class="icon-arrow">
-          <use href="./img/svg/sprite.svg#icon-arrow-narrow-right"></use>
-        </svg>
-      </button>
-    </li>
-  </ul>      
-
-  <script type="module" src="../js/reviews.js"></script>
 </section>
