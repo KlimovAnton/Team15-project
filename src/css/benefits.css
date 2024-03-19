@@ -25,14 +25,18 @@
 
 .icon-benefits {
   margin-bottom: 64px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgb(237, 59, 68);
 }
 
 .benefits-title {
   display: flex;
+  font-family: InterTightBold;
   font-size: 20px;
   font-weight: 600px;
   line-height: 1.5em;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
@@ -41,7 +45,7 @@
   font-size: 16px;
   font-weight: 500px;
   line-height: 1.5em;
-  letter-spacing: 0.125em;
+  letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
 }
 
@@ -55,6 +59,11 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   background-color: transparent;
   color: white;
+}
+
+.benefits-btn:hover {
+  border-color: #ffffff;
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Tablet adaptive */
@@ -71,5 +80,8 @@
   .benefits-container {
     display: flex;
     justify-content: space-between;
+  }
+  .benefits-item {
+    max-width: 332px;
   }
 }
