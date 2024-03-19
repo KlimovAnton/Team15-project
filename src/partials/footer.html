@@ -1,9 +1,20 @@
 <!-- by Tanja -->
 <footer class="section footer-section">
   <div class="container footer-container" id ="work-together">
+    <div class="footer-title-wrapper">
+        <img class="footer-img"
+       srcset="./img/mobile/footer_logo.png 44w,
+       ./img/mobile/footer_logo@2x.png 88w,
+       ./img/desktop/footer_logo_desktop.png 70w,
+       ./img/desktop/footer_logo_desktop@2x.png 140w,
+       " 
+       sizes="(min-width: 1440px) 70w, (min-width: 375px) 44w 100vw"
+       src="./img/mobile/footer_logo.png" alt="developer">
       <h2 class="footer-title">
         LET’S <span class="footer-title-color">WORK</span> TOGETHER
       </h2>
+    </div>
+    
     <form class="footer-form js-footer-form">
       <div class="footer-form-fields">
         <div>
@@ -13,6 +24,7 @@
           class="footer-form-input js-input"
           placeholder="clients@gmail.com"
           pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
         />
         </div>
         <div>
@@ -23,7 +35,7 @@
         ></textarea>
         </div>
       </div>
-      <button class="footer-form-btn js-form-btn">Send</button>
+      <button class="footer-form-btn" name="button">Send</button>
     </form>
     <ul class="footer-contacts">
       <li class="footer-contacts">
@@ -46,7 +58,7 @@
   <div class="footer-modal">
     <button type="button" class="modal-close-btn js-modal-close-btn">
       <svg class="modal-close-icon" width="11" height="11">
-        <use href="../img/svg/sprite.svg#icon-x"></use>
+        <use href="./img/svg/sprite.svg#icon-x"></use>
       </svg>
     </button>
     <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
