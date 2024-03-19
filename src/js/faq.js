@@ -2,7 +2,7 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 document.addEventListener('DOMContentLoaded', function () {
-  // Initialize the Accordion module
+  // Accordion module
   new Accordion('.accordion-container', {
     duration: 400,
     showMultiple: true,
@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     onClose: function (currentElement) {
       console.log(currentElement);
-      // Toggle the 'open' class on the parent .faq-item
       currentElement.parentNode.classList.toggle('open');
     },
   });
@@ -23,15 +22,43 @@ document.addEventListener('DOMContentLoaded', function () {
   // Add click event listener to each arrow icon
   arrowIcons.forEach(function (arrowIcon) {
     arrowIcon.addEventListener('click', function () {
-      // Get the parent FAQ item
       const faqItem = this.closest('.faq-item');
 
-      // Toggle the visibility of the associated paragraph
       const faqItemText = faqItem.querySelector('.faq-item-text');
       faqItemText.classList.toggle('show');
-
-      // Toggle rotation of the arrow icon
       this.classList.toggle('rotate');
+
+      // Adjust the height
+      if (window.innerWidth >= 1440) {
+        const faqList = document.querySelector('.faq-list');
+        const children = faqList.children;
+
+        // index position of the clicked FAQ item
+        const faqIndex = Array.from(children).indexOf(faqItem);
+        let pairedIndex1, pairedIndex2;
+        if (faqIndex % 2 === 0) {
+          pairedIndex1 = faqIndex;
+          pairedIndex2 = faqIndex + 1;
+        } else {
+          pairedIndex1 = faqIndex - 1;
+          pairedIndex2 = faqIndex;
+        }
+
+        // paired FAQ items
+        const pairedItem1 = children[pairedIndex1];
+        const pairedItem2 = children[pairedIndex2];
+
+        // same height for the paired FAQ items when expanding
+        if (faqItemText.classList.contains('show')) {
+          const height = faqItem.offsetHeight;
+          pairedItem1.style.height = height + 'px';
+          pairedItem2.style.height = height + 'px';
+        } else {
+          // Reset the height for the paired FAQ items when collapsing
+          pairedItem1.style.height = '';
+          pairedItem2.style.height = '';
+        }
+      }
     });
   });
 });
