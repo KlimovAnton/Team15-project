@@ -92,7 +92,7 @@ li {
   height: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .faq-item {
     padding: 32px 0px 24px 0px;
     display: flex;
@@ -100,24 +100,24 @@ li {
     gap: 30px;
     border-top: solid 1px rgba(250, 250, 250, 0.2);
     flex-shrink: 0;
-    width: 704px;
+    /* width: 704px; */
   }
 
   /****** to check next time, is container width 100%? *******/
-  .faq-container,
+  /* .faq-container,
   .faq-header {
     max-width: 704px;
     padding: 0;
-  }
+  } */
   /****** //to check next time, is container width 100%? ******/
   .faq-item-question {
-    width: 574px;
+    /* width: 574px; */
     color: #fafafa;
   }
 
   .faq-item-text {
-    height: 96px;
-    width: 656px;
+    /* height: 96px; */
+    /* width: 656px; */
     flex-shrink: 0;
   }
   .arrow {
@@ -128,28 +128,29 @@ li {
 
 @media screen and (min-width: 1440px) {
   .faq-item {
-    padding: 32px 0px 0px 0px;
+    /* padding: 32px 0px 0px 0px; */
     border-top: solid 1px rgba(250, 250, 250, 0.2);
-    width: 688px;
+    width: 50%;
   }
 
   .faq-item-question {
-    width: 574px;
+    /* width: 574px; */
     padding-bottom: 30px;
   }
   .faq-item-text {
-    height: 72px;
-    width: 656px;
+    /* height: 72px; */
+    /* width: 656px; */
   }
 
   /******  to check next time, is container width 100%?*******/
-  .faq-container,
+  /* .faq-container,
   .faq-header {
     max-width: 1376px;
     padding: 0;
-  }
+  } */
   /****** //to check next time, is container width 100%? ******/
   .faq-list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
