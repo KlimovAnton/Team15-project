@@ -79,7 +79,7 @@
     padding-bottom: 364px;
   }
 }
-
+/* dasktop */
 @media screen and (min-width: 1440px) {
   .about-section {
     margin-bottom: 164px;
