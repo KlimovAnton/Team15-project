@@ -8,6 +8,9 @@ const elements = {
   succesBox: document.createElement('div'),
 };
 
+elements.closeBtn.disabled = true;
+console.log(elements.closeBtn.disabled);
+
 function initValidation(form) {
   form.setAttribute('novalidate', '');
 
@@ -29,8 +32,12 @@ function initValidation(form) {
   elements.input.addEventListener('invalid', () => {
     elements.input.setAttribute('aria-invalid', true);
 
+    elements.succesBox.textContent = '';
+    elements.input.setAttribute('aria-valid', false);
+
     const message = getMessage(elements.input);
     elements.errorBox.textContent = message || elements.input.validationMessage;
+    elements.submitBtn.disabled = true;
   });
 
   elements.input.addEventListener('blur', () => {
@@ -52,16 +59,11 @@ function initValidation(form) {
       elements.input.setAttribute('aria-valid', true);
       elements.succesBox.textContent = 'Succes!';
       elements.errorBox.textContent = '';
-      return;
-    } 
-    else {
-      elements.input.setAttribute('aria-valid', false);
-      elements.succesBox.textContent = '';
-      elements.input.setAttribute('aria-invalid', true);
-      elements.submitBtn.disabled = true;
     }
   });
 }
+
+initValidation(elements.form);
 
 function getMessage(field) {
   const validity = field.validity;
@@ -75,7 +77,7 @@ elements.form.addEventListener('submit', handlerSubmit);
 
 function handlerSubmit(evt) {
   evt.preventDefault();
-  
+
   elements.input.setAttribute('aria-valid', false);
   elements.succesBox.textContent = '';
 
