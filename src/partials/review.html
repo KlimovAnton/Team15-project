@@ -5,33 +5,49 @@
     <h2 class="reviews-title">reviews</h2>
 
     <div class="swiper-container">
-      <div class="swiper-wrapper">
-
-      </div>
-    </div>
-    <div class="swiper-btn-wrap">
-    <div class="swiper-button-prev">
-              <button class="prev">
-          <svg width="32" height="32" class="icon-arrow">
-            <use href="./img/svg/sprite.svg#icon-arrow-narrow-right"></use>
-          </svg>
-        </button>
-    </div>
-
-    <div class="swiper-button-next">
-      <button class="next">
-        <svg width="32" height="32" class="icon-arrow">
-          <use href="./img/svg/sprite.svg#icon-arrow-narrow-right"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-  <script type="module" src="../js/reviews.js"></script>
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
+      <div class="swiper-wrapper"></div>
+    </div> 
     
+  <div class="swiper-btn-wrap">
+    <button
+      class="swiper-btn-prev swiper-button-disabled"
+      type="button"
+      tabindex="0"
+      aria-label="Previous slide"
+      aria-controls="swiper-wrapper-2b747105489917d3b"
+      aria-disabled="false"
+    >
+      <svg class="icon-arrow" width="32" height="32">
+        <use
+          href="./img/svg/sprite.svg#icon-arrow-narrow-right"
+        ></use>
+      </svg>
+    </button>
+
+    <button
+      class="swiper-btn-next swiper-button-disabled"
+      type="button"
+      tabindex="-1"
+      aria-label="Next slide"
+      aria-controls="swiper-wrapper-2b747105489917d3b"
+      aria-disabled="true"
+      disabled=""
+    >
+      <svg class="icon-arrow" width="32" height="32">
+        <use
+          href="./img/svg/sprite.svg#icon-arrow-narrow-right"
+        ></use>
+      </svg>
+    </button>
+
+
+    <!-- <details>
+      <summary>
+        <span id="open">read more</span>
+        <span id="close">close</span>
+      </summary>
+ -->
+
+    <script type="module" src="../js/reviews.js"></script>
+  </div>
 </section>

@@ -1,3 +1,4 @@
+import  './js/reviews.js';
 
-// import { initializeSwiper } from 'js/reviews';
+
 
