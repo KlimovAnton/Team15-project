@@ -80,13 +80,8 @@ li {
 }
 
 .arr-btn {
-  width: 40px;
-  height: 40px;
   background-color: transparent;
   border: none;
-  position: absolute;
-  top: 20px;
-  right: 0;
 }
 
 .arrow.rotate {
