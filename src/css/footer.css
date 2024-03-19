@@ -16,58 +16,35 @@
    } 
 
 .footer-title-wrapper {
-  display: flex;
-  gap: 8px;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.footer-img {
+  position: absolute;
+  width: 44px; 
 }
 
 @media screen and (min-width: 768px) {
-  .footer-title-wrapper {
-    gap: 20px;
+  .footer-img {
+    width: 70px;
   }
 }
 
 .footer-title {
+  text-indent: 52px;
   font-size: 40px;
-  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-title {
+    text-indent: 90px;
     font-size: 64px;
   }
 }
 
 .footer-title-color {
   color: #ed3b44;
-}
-
-.footer-title::before {
-  content:url(../img/mobile/footer_logo.png);
-
-  display: inline-block;
-  margin-left: 8px;
-  
-}
-
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .footer-title::before {
-    content:url(../img/mobile/footer_logo@2x.png);
-    
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-title::before {
-    content:url(../img/desktop/footer_logo.png);
-
-    margin-left: 20px;
-  }
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .footer-title::before {
-      content:url(../img/desktop/footer_logo@2x.png);
-    }
-  }
 }
 
 .footer-form {
@@ -300,6 +277,12 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-title {
+    font-size: 19px;
+  }
 }
 
 .modal-text {
