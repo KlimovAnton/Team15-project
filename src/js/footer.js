@@ -1,16 +1,15 @@
 const elements = {
   form: document.querySelector('.js-footer-form'),
   closeBtn: document.querySelector('.js-modal-close-btn'),
+  submitBtn: document.querySelector('.footer-form-btn'),
   modal: document.querySelector('.backdrop'),
   input: document.querySelector('.js-input'),
+  errorBox: document.createElement('div'),
+  succesBox: document.createElement('div'),
 };
 
-elements.input.setAttribute('aria-invalid', false);
-elements.input.setAttribute('aria-valid', false);
-const errorBox = document.createElement('div');
-errorBox.classList.add('error');
-const succesBox = document.createElement('div');
-succesBox.classList.add('succes');
+elements.closeBtn.disabled = true;
+console.log(elements.closeBtn.disabled);
 
 function initValidation(form) {
   form.setAttribute('novalidate', '');
@@ -21,9 +20,25 @@ function initValidation(form) {
       event.preventDefault();
     }
   });
- 
-  elements.input.insertAdjacentElement('afterend', errorBox);
-  elements.input.insertAdjacentElement('afterend', succesBox);
+
+  elements.input.setAttribute('aria-invalid', false);
+  elements.input.setAttribute('aria-valid', false);
+  elements.errorBox.classList.add('error');
+  elements.succesBox.classList.add('succes');
+
+  elements.input.insertAdjacentElement('afterend', elements.errorBox);
+  elements.input.insertAdjacentElement('afterend', elements.succesBox);
+
+  elements.input.addEventListener('invalid', () => {
+    elements.input.setAttribute('aria-invalid', true);
+
+    elements.succesBox.textContent = '';
+    elements.input.setAttribute('aria-valid', false);
+
+    const message = getMessage(elements.input);
+    elements.errorBox.textContent = message || elements.input.validationMessage;
+    elements.submitBtn.disabled = true;
+  });
 
   elements.input.addEventListener('blur', () => {
     elements.input.checkValidity();
@@ -31,20 +46,29 @@ function initValidation(form) {
 
   elements.input.addEventListener('input', () => {
     const valid = elements.input.checkValidity();
+
+    let maxLength = 20;
+
+    if (elements.input.value.length > maxLength) {
+      elements.input.value =
+        elements.input.value.substring(0, maxLength) + '...';
+    }
+
     if (valid) {
       elements.input.setAttribute('aria-invalid', false);
       elements.input.setAttribute('aria-valid', true);
-      succesBox.textContent = 'Succes!';
-      errorBox.textContent = '';
-      return;
-    } 
-    else {
-      elements.input.setAttribute('aria-valid', false);
-      succesBox.textContent = ''
-      elements.input.setAttribute('aria-invalid', true);
-      errorBox.textContent = 'Invalid email, try again!';
+      elements.succesBox.textContent = 'Succes!';
+      elements.errorBox.textContent = '';
     }
   });
+}
+
+initValidation(elements.form);
+
+function getMessage(field) {
+  const validity = field.validity;
+  if (validity.valueMissing) return `Please enter your email`;
+  if (validity.typeMismatch) return `Invalid email, try again!`;
 }
 
 initValidation(elements.form);
@@ -53,14 +77,13 @@ elements.form.addEventListener('submit', handlerSubmit);
 
 function handlerSubmit(evt) {
   evt.preventDefault();
-  
-  succesBox.classList.remove('succes');
+
   elements.input.setAttribute('aria-valid', false);
-  succesBox.textContent = '';
+  elements.succesBox.textContent = '';
 
+  const { email, comment, button } = evt.currentTarget.elements;
 
-  const { email, comment } = evt.currentTarget.elements;
-
+  button.disabled = false;
   const post = {
     email: email.value,
     comment: comment.value,
@@ -79,7 +102,7 @@ function handlerSubmit(evt) {
 
       evt.currentTarget.reset()
     )
-    .catch();
+    .catch(error => console.error('Error:', error));
 }
 
 elements.closeBtn.addEventListener('click', handlerClick);
@@ -88,4 +111,4 @@ function handlerClick() {
   elements.modal.classList.add('is-hidden');
 }
 
-
+export { elements, initValidation, getMessage, handlerSubmit, handlerClick };
