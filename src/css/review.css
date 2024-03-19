@@ -2,8 +2,7 @@
 .reviews-section {
   padding-top: 32px;
   padding-bottom: 32px;
-  /* position: sticky; */
-}
+ }
 
 .reviews-title {
   font-weight: 600;
@@ -20,20 +19,24 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
+  /* width: 343px; */
+  
+} 
+  
+#wrap{
+  height: 330px;
   width: 343px;
-  /* height: 302px; */
-  height: 100%;
 }
 
 .swiper-wrapper {
   display: flex;
   flex-direction: row;
+  height: 400px;
 }
 
 .review-avatar {
   top: 0;
-  position: unset;
-  margin-bottom: 32px;
+   margin-bottom: 32px;
 }
 
 .review-text {
@@ -66,7 +69,7 @@
   background-color: #1c1d20;
   position: relative;
   stroke: #fafafa;
-  /* cursor: pointer; */
+ 
 }
 
 .swiper-button-disabled {
@@ -82,6 +85,10 @@
 .swiper-button-disabled .icon-arrow {
   stroke: #fafafa33;
 }
+
+
+
+
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1440px) {
