@@ -1,38 +1,67 @@
 <!-- by Tanja -->
-<footer class="section">
-  <div class="container">
+<footer class="section footer-section">
+  <div class="container footer-container" id ="work-together">
     <div class="footer-title-wrapper">
-      <img src="./img/mobile/footer_logo.png" alt="developer" />
+        <img class="footer-img"
+       srcset="./img/mobile/footer_logo.png 44w,
+       ./img/mobile/footer_logo@2x.png 88w,
+       ./img/desktop/footer_logo_desktop.png 70w,
+       ./img/desktop/footer_logo_desktop@2x.png 140w,
+       " 
+       sizes="(min-width: 1440px) 70w, (min-width: 375px) 44w 100vw"
+       src="./img/mobile/footer_logo.png" alt="developer">
       <h2 class="footer-title">
-        LET’S <span class="footer-title-color">WORK</span>
+        LET’S <span class="footer-title-color">WORK</span> TOGETHER
       </h2>
     </div>
-    <h2 class="footer-title">TOGETHER</h2>
-
-    <form class="footer-form">
+    
+    <form class="footer-form js-footer-form" novalidate>
       <div class="footer-form-fields">
-        <input
+        <div>
+          <input
           type="email"
-          name="user-email"
-          class="footer-form-input"
+          name="email"
+          class="footer-form-input js-input ellipsis"
           placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           required
         />
-        <textarea
-          name="user-comment"
+        <div class="message-box"></div>
+        </div>
+        <div>
+          <textarea
+          name="comment"
           class="footer-form-comments"
           placeholder="comments"
         ></textarea>
+        </div>
       </div>
-      <button class="footer-form-btn">Send</button>
+      <button class="footer-form-btn" type="submit" name="button">Send</button>
     </form>
     <ul class="footer-contacts">
       <li class="footer-contacts">
-        <a class="footer-contacts-link" href="">lloydjefferson@gmail.com</a>
+        <a class="footer-contacts-link" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
       </li>
       <li class="footer-contacts">
-        <a class="footer-contacts-link" href="">+380 11 1111 11 11</a>
+        <a class="footer-contacts-link" href="tel:+3801111111111"
+          >+380 11 1111 11 11</a
+        >
       </li>
     </ul>
   </div>
 </footer>
+
+<!-- Modal window -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="footer-modal">
+    <button type="button" class="modal-close-btn js-modal-close-btn">
+      <svg class="modal-close-icon" width="11" height="11">
+        <use href="./img/svg/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
+    <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+  </div></div>

@@ -11,9 +11,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-title-desktop{
-  display: none;
-}
+  .hero-title-desktop {
+    display: none;
+  }
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 }
 
 .hero-title {
-  font-family: 'Inter Tight', sans-serif;
+  font-family: InterTightMedium;
   font-weight: 500;
   font-size: 50px;
   line-height: 100%;
@@ -58,13 +58,6 @@ a {
   display: flex;
 }
 
-.hero-list-item-link:hover,
-.hero-list-item-link:focus,
-.button-link:active {
-  border-color: #fafafa;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .hero-email-item {
   font-weight: 500;
   font-size: 14px;
@@ -78,13 +71,6 @@ a {
 
 .hero-email-wrapper {
   display: flex;
-}
-
-.hero-email:hover,
-.hero-email:focus,
-.hero-email:active {
-  border-color: #fafafa;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-email {
@@ -125,9 +111,11 @@ a {
   .hero {
     background-image: url(../img/tablet/hero_bg_tablet.png);
   }
-.hero-title-desktop{
-  display: none;
-}
+
+  .hero-title-desktop {
+    display: none;
+  }
+
   .hero-title {
     font-weight: 500;
     font-size: 90px;
@@ -148,6 +136,13 @@ a {
     height: 55px;
   }
 
+  .hero-list-item-link:hover,
+  .hero-list-item-link:focus,
+  .hero-list-item-link:active {
+    border-color: #fafafa;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .icon-svg {
     width: 15px;
     height: 19px;
@@ -163,15 +158,18 @@ a {
     height: 55px;
     margin-left: 8px;
   }
+
   .hero-email-item {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
   }
+
   .hero-wrapper {
     display: flex;
     justify-content: end;
   }
+
   .hero-email:hover,
   .hero-email:focus,
   .hero-email:active {
@@ -194,29 +192,26 @@ a {
   .hero {
     background-image: url(../img/desktop/header_bg_desktop.png);
   }
-  /* .hero-title br:nth-of-type(2),
-  .hero-title br:nth-of-type(4) {
+
+  .hero-title {
     display: none;
-  } */
-.hero-title{
-  display: none;
-}
+  }
+
   .hero-title-desktop {
     display: flex;
     justify-content: center;
-
-    font-family: 'Inter Tight', sans-serif;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #fafafa;
-  margin-bottom: 212px;
-  margin-top: 169px;
+    font-family: InterTightMedium;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+    margin-bottom: 212px;
+    margin-top: 169px;
     margin-bottom: 243px;
-
   }
+
 
   .hero-wrapper {
     display: flex;
