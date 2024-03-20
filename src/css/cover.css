@@ -13,34 +13,38 @@
     background-image: url(../img/mobile/cover_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 508px;
   }
 
   .cover-container {
+    height: 100vh;
     display: flex;
-    padding: 0;
-    right: -800px;
-    left: 0;
     overflow: hidden;
-    height: 508px;
   }
 
-  .cover-line {
-    display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
+  .cover-list {
     transform: rotate(16deg);
   }
 
-  .cover-picture {
+  .cover-line {
+    right: -800px;
+    left: 0;
+    margin-bottom: 25px;
+  }
+
+  .cover-line-wrapper {
     display: flex;
-    width: 282px;
-    height: 162px;
-    justify-content: center;
+    gap: 25px;
+  }
+  .cover-picture .show {
     animation-name: slide;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+  }
+
+  .cover-picture {
+    width: 282px;
+    height: 162px;
   }
 
   .cover-img {
@@ -70,49 +74,38 @@
 @media screen and (min-width: 768px) {
   .section-cover {
     background-image: url(../img/tablet/cover_bg.png);
-    height: 960px;
   }
 
-  .cover-container {
-    display: flex;
-    padding: 0;
-    right: -800px;
-    left: 0;
 
-    height: 960px;
-  }
-  .cover-line {
-    display: flex;
-    gap: 75px;
-    height: 314px;
-    margin-bottom: 50px;
-    transform: rotate(16deg);
-  }
-
-  .cover-picture {
-    display: flex;
-    width: 544px;
-    height: 314px;
-    justify-content: center;
-  }
-
-  .cover-img {
-    width: 544px;
-    height: 314px;
-  }
+.cover-line {
+  margin-bottom: 50px;
 }
 
+.cover-line-wrapper {
+  gap: 50px;
+}
+
+.cover-picture {
+  width: 544px;
+  height: 314px;
+}
+
+.cover-img {
+  width: 544px;
+  height: 314px;
+}
+}
 /* DESKTOP */
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .section-cover {
     background-image: url(../img/desktop/cover_bg@2x.jpg);
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .section-cover {
     background-image: url(../img/desktop/cover_bg.jpg);
   }
