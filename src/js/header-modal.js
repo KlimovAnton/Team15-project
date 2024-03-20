@@ -21,7 +21,3 @@ const refs = {
       refs.menu.classList.add("is-hidden");
       refs.body.classList.remove("no-scroll");
     }
-    
-    
-export { openModal };
-export { closeModal };
