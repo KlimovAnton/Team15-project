@@ -15,7 +15,7 @@
   text-transform: uppercase;
 }
 
-.swiper-slide {
+.swiper-style {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -28,7 +28,7 @@
   /* width: 343px; */
 }
 
-.swiper-wrapper {
+.reviews-wrapper {
   display: flex;
   flex-direction: row;
   }

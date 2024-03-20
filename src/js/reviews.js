@@ -24,12 +24,12 @@ async function getReviews() {
 }
 
 function renderReviews(reviews) {
-  const swiperWrapper = document.querySelector('.swiper-wrapper');
+  const swiperWrapper = document.querySelector('.reviews-wrapper');
   swiperWrapper.innerHTML = '';
   let reviewsList = '';
   for (const { author, avatar_url, review } of reviews) {
     reviewsList += `
-      <li class="swiper-slide">
+      <li class="swiper-slide swiper-style">
         <img class="review-avatar" src="${avatar_url}" alt="${author}" width="48" height="48" />
         <h3 class="review-autor">${author}</h3>
         <p class="review-text">${review}</p>
@@ -41,73 +41,99 @@ function renderReviews(reviews) {
 
 getReviews();
 
-const swiperWrapper = document.querySelector('.swiper-wrapper');
-const swiperContainer = document.querySelector('.swiper-container');
-
-const swiper = new Swiper('.swiper-container', {
+// const swiperWrapper = document.querySelector('.swiper-wrapper');
+const swiperContainer = document.querySelector('.reviews-wrapper-check');
+const swiperWrapper = {
+  speed: 1000,
   navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
-  },
-  keyboard: {
-    enabled: true,
-  },
-  mousewheel: true,
-  touch: true,
-  slidesPerView: 1,
-  spaceBetween: 16,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+      },
+      keyboard: {
+        enabled: true,
+      },
+      mousewheel: true,
+      touch: true,
+      slidesPerView: 1,
       spaceBetween: 16,
-    },
-    1440: {
-      slidesPerView: 4,
-      spaceBetween: 16,
-    },
-  },
-  allowSlideNext: true,
-});
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 16,
+        },
+      },
+      allowSlideNext: true,
+    };
 
-const nextButton = document.querySelector('.swiper-btn-next');
-const prevButton = document.querySelector('.swiper-btn-prev');
+const reviewSlider = new Swiper(swiperContainer, swiperWrapper);
+// const swiper = new Swiper('.reviews-wrapper', {
+//   navigation: {
+//     nextEl: '.swiper-btn-next',
+//     prevEl: '.swiper-btn-prev',
+//   },
+//   keyboard: {
+//     enabled: true,
+//   },
+//   mousewheel: true,
+//   touch: true,
+//   slidesPerView: 1,
+//   spaceBetween: 16,
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2,
+//       spaceBetween: 16,
+//     },
+//     1440: {
+//       slidesPerView: 4,
+//       spaceBetween: 16,
+//     },
+//   },
+//   allowSlideNext: true,
+// });
 
-function checkSlideCount() {
-  if (swiper.slides.length === 0) {
-    nextButton.setAttribute('disabled', 'disabled');
-    nextButton.classList.add('swiper-button-disabled');
-    prevButton.setAttribute('disabled', 'disabled');
-    prevButton.classList.add('swiper-button-disabled');
-  } else if (swiper.isBeginning) {
-    prevButton.setAttribute('disabled', 'disabled');
-    prevButton.classList.add('swiper-button-disabled');
-    nextButton.removeAttribute('disabled');
-    nextButton.classList.remove('swiper-button-disabled');
-  } else if (swiper.isEnd) {
-    nextButton.setAttribute('disabled', 'disabled');
-    nextButton.classList.add('swiper-button-disabled');
-    prevButton.removeAttribute('disabled');
-    prevButton.classList.remove('swiper-button-disabled');
-  } else {
-    nextButton.removeAttribute('disabled');
-    nextButton.classList.remove('swiper-button-disabled');
-    prevButton.removeAttribute('disabled');
-    prevButton.classList.remove('swiper-button-disabled');
-  }
-}
+// const nextButton = document.querySelector('.swiper-btn-next');
+// const prevButton = document.querySelector('.swiper-btn-prev');
 
-try {
-  checkSlideCount();
-  nextButton.addEventListener('click', () => {
-    swiper.slideNext();
-    checkSlideCount();
-  });
+// function checkSlideCount() {
+//   if (swiper.slides.length === 0) {
+//     nextButton.setAttribute('disabled', 'disabled');
+//     nextButton.classList.add('swiper-button-disabled');
+//     prevButton.setAttribute('disabled', 'disabled');
+//     prevButton.classList.add('swiper-button-disabled');
+//   } else if (swiper.isBeginning) {
+//     prevButton.setAttribute('disabled', 'disabled');
+//     prevButton.classList.add('swiper-button-disabled');
+//     nextButton.removeAttribute('disabled');
+//     nextButton.classList.remove('swiper-button-disabled');
+//   } else if (swiper.isEnd) {
+//     nextButton.setAttribute('disabled', 'disabled');
+//     nextButton.classList.add('swiper-button-disabled');
+//     prevButton.removeAttribute('disabled');
+//     prevButton.classList.remove('swiper-button-disabled');
+//   } else {
+//     nextButton.removeAttribute('disabled');
+//     nextButton.classList.remove('swiper-button-disabled');
+//     prevButton.removeAttribute('disabled');
+//     prevButton.classList.remove('swiper-button-disabled');
+//   }
+// }
 
-  prevButton.addEventListener('click', () => {
-    swiper.slidePrev();
-    checkSlideCount();
-  });
-} catch (error) {
-  console.error('Error fetching reviews:', error);
-  alert('Not found');
-}
+// try {
+//   checkSlideCount();
+//   nextButton.addEventListener('click', () => {
+//     swiper.slideNext();
+//     checkSlideCount();
+//   });
+
+//   prevButton.addEventListener('click', () => {
+//     swiper.slidePrev();
+//     checkSlideCount();
+//   });
+// } catch (error) {
+//   console.error('Error fetching reviews:', error);
+//   alert('Not found');
+// }
