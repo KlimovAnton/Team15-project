@@ -61,6 +61,29 @@
   letter-spacing: -0.02em;
 }
 
+.header-mob-menu-order-link {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 14px 31.5px;
+  border: none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  background-color: var(--button-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  
+  position: fixed;
+  bottom: 64px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
 .header-mob-menu-order {
   vertical-align: bottom;
 }
