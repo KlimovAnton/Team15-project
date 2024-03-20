@@ -5,6 +5,7 @@ const elements = {
   modal: document.querySelector('.backdrop'),
   input: document.querySelector('.js-input'),
   messageBox: document.querySelector('.message-box'),
+  backdrop: document.querySelector('.backdrop')
 };
 
 const resetStyles = () => {
@@ -107,19 +108,17 @@ function handlerSubmit(evt) {
   }
 }
 
-elements.closeBtn.addEventListener('click', handlerClick);
+elements.closeBtn.addEventListener('click', closeModal);
+elements.backdrop.addEventListener('click', closeModal);
+document.addEventListener('keydown', keyPressHandler); 
 
-function handlerClick() {
+function closeModal() {
   elements.modal.classList.add('is-hidden');
 }
 
-export {
-  elements,
-  resetStyles,
-  setSuccessStyles,
-  initValidation,
-  getMessage,
-  handlerSubmit,
-  handlerClick,
-};
+function keyPressHandler(event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
+}
 
