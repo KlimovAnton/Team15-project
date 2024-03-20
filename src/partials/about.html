@@ -1,4 +1,5 @@
 <!-- by Miroslav -->
+
 <section class="about-section">
   <div class="container">
     <ul class="about-me-head-list">
@@ -113,16 +114,30 @@
         </ul>
       </li>
     </ul>
-    <div class="tech-arrow-container">
-      <ul class="tech-stack">
-        <li><button class="tech-button">HTML/CSS</button></li>
-        <li><button class="tech-button">JavaScript</button></li>
-        <li><button class="tech-button">React</button></li>
-        <li><button class="tech-button">Node.js</button></li>
-        <li><button class="tech-button">React Native</button></li>
-        <li><button class="tech-button">Soft skills</button></li>
-      </ul>
-      <button class="arrow-narrow-right">
+    <div class="tech-arrow-container swiper-container">
+      <div class="tech-stack-container swiper-wrapper">
+        <ul class="tech-stack swiper-wrapper">
+          <li class="swiper-slide">
+            <button class="tech-button">HTML/CSS</button>
+          </li>
+          <li class="swiper-slide">
+            <button class="tech-button">JavaScript</button>
+          </li>
+          <li class="swiper-slide">
+            <button class="tech-button">React</button>
+          </li>
+          <li class="swiper-slide">
+            <button class="tech-button">Node.js</button>
+          </li>
+          <li class="swiper-slide">
+            <button class="tech-button">React Native</button>
+          </li>
+          <li class="swiper-slide">
+            <button class="tech-button">Soft skills</button>
+          </li>
+        </ul>
+      </div>
+      <button class="arrow-narrow-right swiper-button-next">
         <svg width="20" height="20" class="arrow-tech">
           <use href="../img/svg/sprite.svg#icon-arrow-narrow-right"></use>
         </svg>
@@ -130,3 +145,4 @@
     </div>
   </div>
 </section>
+<script type="module" src="../js/about.js" defer></script>
