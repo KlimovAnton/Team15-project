@@ -229,9 +229,7 @@
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 .footer-modal {
