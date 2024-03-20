@@ -2,14 +2,31 @@
 <footer class="section footer-section">
   <div class="container footer-container" id ="work-together">
     <div class="footer-title-wrapper">
-        <img class="footer-img"
-       srcset="./img/mobile/footer_logo.png 44w,
-       ./img/mobile/footer_logo@2x.png 88w,
-       ./img/desktop/footer_logo_desktop.png 70w,
-       ./img/desktop/footer_logo_desktop@2x.png 140w,
-       " 
-       sizes="(min-width: 1440px) 70w, (min-width: 375px) 44w 100vw"
-       src="./img/mobile/footer_logo.png" alt="developer">
+      <picture class="footer-picture">
+        <!-- Mobile-->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/mobile/footer_logo.png    1x,
+            ./img/mobile/footer_logo@2x.png 2x
+          "
+          type="image/jpg"
+        />
+        <source
+            media="(min-width: 768px)"
+            srcset="
+              ./img/desktop/footer_logo_desktop.png   1x,
+              ./img/desktop/footer_logo_desktop@2x.png 2x
+            "
+            type="image/jpg"
+          />
+          <img
+            class="footer-img"
+            src="./img/mobile/footer_logo@2x.png"
+            alt="developer"
+            width="44"
+          />
+        </picture>
       <h2 class="footer-title">
         LET’S <span class="footer-title-color">WORK</span> TOGETHER
       </h2>
