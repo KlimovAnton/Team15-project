@@ -68,7 +68,7 @@
   background-color: var(--button-hover);
 }
 
-.project-container-item {
+.project-style {
   font-size: 18px;
   color: #ffffff;
   display: flex;
