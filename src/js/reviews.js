@@ -12,7 +12,6 @@ const swiperWrapper = {
       keyboard: {
         enabled: true,
       },
-      mousewheel: true,
       touch: true,
       slidesPerView: 1,
       spaceBetween: 16,
