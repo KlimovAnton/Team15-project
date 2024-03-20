@@ -44,7 +44,7 @@ getReviews();
 // const swiperWrapper = document.querySelector('.swiper-wrapper');
 const swiperContainer = document.querySelector('.reviews-wrapper-check');
 const swiperWrapper = {
-  speed: 900,
+  speed: 1000,
   navigation: {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',
