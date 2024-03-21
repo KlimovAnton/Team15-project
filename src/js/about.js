@@ -15,3 +15,30 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   const aboutSlider = new Swiper(aboutSwiperItem, aboutSwiperProps);
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const accordionHeaders = document.querySelectorAll('.about-accordion-header');
+
+//   accordionHeaders.forEach(header => {
+//     header.addEventListener('click', function () {
+//       const content = this.nextElementSibling;
+//       content.classList.toggle('active');
+//       console.log('log');
+//     });
+//   });
+// });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+//   accordionHeaders.forEach(header => {
+//     header.addEventListener('click', function () {
+//       const content = this.nextElementSibling;
+//       if (content.classList.contains('active')) {
+//         content.classList.remove('active');
+//       } else {
+//         content.classList.add('active');
+//       }
+//     });
+//   });
+// });

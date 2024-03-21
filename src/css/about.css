@@ -55,6 +55,14 @@
   flex: 1;
 }
 
+.text-about-section {
+  display: none;
+}
+
+.text-about-section.active {
+  display: inline;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .about-section {
     margin-top: 64px;
