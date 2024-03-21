@@ -43,10 +43,10 @@
       </li>
     </ul>
     <ul class="about-me-list">
-      <li class="about-me">
+      <li class="about-me about-list-item ac">
         <div class="about-arrow-button-container">
-          <p class="about-accordion-header">about me</p>
-          <button class="hide-text-btn">
+          <h3 class="about-accordion-header ac-header">About me</h3>
+          <button class="hide-text-btn ac-trigger">
             <svg width="20" height="20" class="about-svg-arrow">
               <use
                 class="arrow-icon"
@@ -55,62 +55,66 @@
             </svg>
           </button>
         </div>
-        <p class="text">
-          I am Lloyd Jefferson, a talented programmer with extensive expertise
-          in software development. I have an understanding of different
-          programming languages ​and technologies, always ready to improve my
-          skills. I always follow the latest trends and look for unconventional,
-          creative solutions to problems. I have a high level of analytical
-          skills and am able to effectively solve even the most difficult tasks
-          encountered on the way. Able to work both independently and in a team.
-          I can effectively cooperate with colleagues, exchanging ideas and
-          finding optimal solutions. Professional maturity allows you to calmly
-          cope with challenges and stressful situations, while maintaining a
-          high quality of work. I am always looking for opportunities for
-          self-improvement. I actively study new technologies and practices to
-          stay abreast of the latest innovations. I have a strong understanding
-          of various programming languages, frameworks and architectural
-          concepts that allow me to create efficient and scalable software.
-        </p>
+        <div class = "role-list ac-panel">
+          <p class="text ac-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages ​and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for unconventional,
+            creative solutions to problems. I have a high level of analytical
+            skills and am able to effectively solve even the most difficult tasks
+            encountered on the way. 
+          </p>
+          <p class="text ac-text">
+            Able to work both independently and in a team.
+            I can effectively cooperate with colleagues, exchanging ideas and
+            finding optimal solutions. Professional maturity allows you to calmly
+            cope with challenges and stressful situations, while maintaining a
+            high quality of work. I am always looking for opportunities for
+            self-improvement. I actively study new technologies and practices to
+            stay abreast of the latest innovations. I have a strong understanding
+            of various programming languages, frameworks and architectural
+            concepts that allow me to create efficient and scalable software.
+          </p>
+        </div>
       </li>
-      <li class="role">
+      <li class="role about-list-item ac">
         <div class="about-arrow-button-container">
-          <p class="about-accordion-header">role</p>
-          <button class="hide-text-btn">
+          <h3 class="about-accordion-header ac-header">Role</h3>
+          <button class="hide-text-btn ac-trigger">
+            <svg width="20" height="20" class="about-svg-arrow">
+              <use href="./img/svg/sprite.svg#icon-arrow-bot"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-panel">
+            <p class="role ac-text">Frontend development</p>
+            <p class="role ac-text">HeadlessCMS,Wordpress</p>
+            <p class="role ac-text">Blender(enjoy)</p>
+        </div>
+      </li>
+      <li class="education about-list-item ac">
+        <div class="about-arrow-button-container">
+          <h3 class="about-accordion-header ac-header">Education</h3>
+          <button class="hide-text-btn ac-trigger">
             <svg width="20" height="20" class="about-svg-arrow">
               <use href="./img/svg/sprite.svg#icon-arrow-bot"></use>
             </svg>
           </button>
         </div>
 
-        <ul class="role-list text">
-          <li class="role">Frontend development</li>
-          <li class="role">HeadlessCMS,Wordpress</li>
-          <li class="role">Blender(enjoy)</li>
-        </ul>
-      </li>
-      <li class="education">
-        <div class="about-arrow-button-container">
-          <p class="about-accordion-header">education</p>
-          <button class="hide-text-btn">
-            <svg width="20" height="20" class="about-svg-arrow">
-              <use href="./img/svg/sprite.svg#icon-arrow-bot"></use>
-            </svg>
-          </button>
-        </div>
-
-        <ul class="education text">
-          <li class="education-item text">
+        <div class="ac-panel">
+          <p class="education-item text ac-text">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
-          </li>
-          <li class="education-item text">
+          </p>
+          <p class="education-item text ac-text">
             2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
             New York
-          </li>
-          <li class="education-item text">
+          </p>
+          <p class="education-item text ac-text">
             2020 - 2022 / Advanced Blender Animation Techniques, Udemy
-          </li>
-        </ul>
+          </p>
+        </div>
       </li>
     </ul>
     <div class="tech-arrow-container">
@@ -122,7 +126,7 @@
         <li><button class="tech-button">React Native</button></li>
         <li><button class="tech-button">Soft skills</button></li>
       </ul>
-      <button class="arrow-narrow-right">
+      <button class="arrow-narrow-right ac-trigger">
         <svg width="20" height="20" class="arrow-tech">
           <use href="./img/svg/sprite.svg#icon-arrow-narrow-right"></use>
         </svg>
