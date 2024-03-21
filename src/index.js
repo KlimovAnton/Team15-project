@@ -1,4 +1,5 @@
 import "./js/header-modal.js";
+import "./js/about.js";
 import "./js/projects.js";
 import './js/faq.js';
 import './js/render-api.js';
