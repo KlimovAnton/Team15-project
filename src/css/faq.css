@@ -45,6 +45,7 @@ li {
 
 .faq-item-text.show {
   display: block;
+  animation-name: none;
 }
 .faq-item.open {
   border-bottom: solid 1px rgba(250, 250, 250, 0.2); /* Adjust border style */
