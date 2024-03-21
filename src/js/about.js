@@ -1,4 +1,5 @@
 import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 const aboutAccordionEl = document.querySelector('.about-me-list');
 const aboutAccordionProps = {
@@ -17,4 +18,3 @@ const aboutAccordionProps = {
 };
 
 const aboutAccordion = new Accordion(aboutAccordionEl, aboutAccordionProps);
-aboutAccordion.open(0);
