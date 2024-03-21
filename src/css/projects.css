@@ -104,7 +104,7 @@
   stroke: #fafafa;
 }
 
-.slide-btn-disabled{
+.swiper-button-disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
   stroke: #fafafa33;
 }
@@ -113,7 +113,7 @@
   transform: scaleX(-1);
 }
 
-.slide-btn-disabled .icon-narrow {
+.swiper-button-disabled .icon-narrow {
   stroke: #fafafa33;
   opacity: 0.35;
 }
