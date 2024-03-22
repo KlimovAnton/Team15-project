@@ -2,11 +2,9 @@
 
 @media screen and (max-width: 375px) {
   .section-cover {
-    width:375px;
+    width: 375px;
   }
 }
-  
-
 
 @media screen and (min-resolution: 192dpi) and (max-width: 768px),
   screen and (min-resolution: 2dppx) and (max-width: 768px),
@@ -17,7 +15,6 @@
 }
 @media screen and (min-width: 320px) {
   .section-cover {
-    
     margin: 0;
     padding: 0;
     background-image: url(../img/mobile/cover_bg.png);
@@ -27,7 +24,7 @@
 
   .cover-container {
     max-height: 508px;
-   
+
     height: 85vh;
     display: flex;
     overflow: hidden;
@@ -35,16 +32,13 @@
     margin: 0;
   }
 
- 
-
   .cover-line {
-    
     margin-bottom: 25px;
   }
 
   .cover-line-wrapper {
     transform: rotate(16deg);
-    
+
     display: flex;
     gap: 25px;
   }
@@ -58,13 +52,11 @@
   }
 
   .cover-picture {
-    
     width: 282px;
     height: 162px;
   }
 
   .cover-img {
-    
     width: 282px;
     height: 162px;
   }
