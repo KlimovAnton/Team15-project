@@ -20,6 +20,7 @@
   border-radius: 20px;
   padding: 32px 24px;
   width: 343px;
+  height: 302px;
 }
 
 .reviews-wrapper {
@@ -91,9 +92,6 @@
   .swiper-btn-next {
     width: 68px;
     height: 68px;
-  }
-  .swiper-slide {
-    height: 302px;
   }
 }
 
