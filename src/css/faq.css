@@ -41,6 +41,7 @@ li {
 }
 .faq-item-text {
   display: none;
+  padding-top:10px;
 }
 
 .faq-item-text.show {
@@ -109,6 +110,7 @@ li {
   }
 
   .faq-item-text {
+    padding-top: 0;
     flex-shrink: 0;
   }
   .arrow {

@@ -22,10 +22,6 @@
   width: 343px;
 }
 
-#wrap {
-  height: 320px;
-}
-
 .reviews-wrapper {
   display: flex;
   flex-direction: row;
@@ -37,6 +33,9 @@
 }
 
 .review-text {
+  height: 130px;
+  overflow: auto;
+  margin-top: 10px;
   line-height: 150%;
   letter-spacing: -0.02em;
 }

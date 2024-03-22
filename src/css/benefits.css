@@ -73,6 +73,9 @@
     gap: 16px;
     grid-template-columns: repeat(2, 1fr);
   }
+  .benefits-btn {
+    margin-top: 30px;
+  }
 }
 
 /* Desctop adaptive */
