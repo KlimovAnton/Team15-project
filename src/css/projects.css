@@ -118,6 +118,10 @@
   opacity: 0.35;
 }
 
+.project-style > .swiper-slide {
+  height: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .project-container-list {
     margin-bottom: 64px;
