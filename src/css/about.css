@@ -8,12 +8,10 @@
   border-radius: 24px;
 }
 
-
 .about-me-p {
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
-  font-family: InterTightMedium sanf-serif;
   font-weight: 500;
   text-align: left;
   text-transform: uppercase;
@@ -131,7 +129,6 @@
   }
 
   .about-me-p {
-    font-family: InterTightMedium sanf-serif;
     font-size: 38px;
     font-weight: 500;
     line-height: 40px;
@@ -199,8 +196,7 @@
   height: 36px;
 }
 
-.about-arrow-button-container>p {
-  font-family: InterTightMedium sanf-serif;
+.about-arrow-button-container > p {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
@@ -220,7 +216,7 @@
   justify-content: center;
   background-color: transparent;
 }
-.about-svg-arrow{
+.about-svg-arrow {
   display: block;
 }
 
@@ -232,6 +228,7 @@
   letter-spacing: -2%;
   text-align: left;
   margin-bottom: 16px;
+  font-family: inherit;
 }
 
 .education {
@@ -401,7 +398,6 @@
     height: 200px;
     font-size: 20px;
     letter-spacing: -0.02em;
-
   }
 
   .about-slider-wrapper > button {
@@ -417,7 +413,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-  
   .about-slider-wrapper > button {
     gap: 72px;
   }

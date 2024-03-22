@@ -31,7 +31,7 @@ a {
 }
 
 .hero-title {
-  font-family: InterTightMedium;
+ 
   font-weight: 500;
   font-size: 50px;
   line-height: 100%;
@@ -200,7 +200,7 @@ a {
   .hero-title-desktop {
     display: flex;
     justify-content: center;
-    font-family: InterTightMedium;
+    /* font-family: InterTightMedium; */
     font-weight: 500;
     font-size: 90px;
     line-height: 100%;
